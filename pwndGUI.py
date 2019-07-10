@@ -18,6 +18,7 @@ def button_click(entry):
 
 root = tk.Tk()
 root.title(window_title)
+root.iconbitmap("color_wheel.ico")
 
 canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
 canvas.pack()
