@@ -22,6 +22,10 @@ root.title(window_title)
 canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
 canvas.pack()
 
+background_image = tk.PhotoImage(file="background.png")
+background_label = tk.Label(root, image=background_image)
+background_label.place(relheight=1, relwidth=1)
+
 frame = tk.Frame(root, bg="blue", bd=5)
 frame.place(relx=0.5, rely=0.1, relwidth=0.75,
             relheight=0.1, anchor="n")
