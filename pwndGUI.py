@@ -5,6 +5,8 @@ HEIGHT = 700
 WIDTH = 900
 window_title = "have you been pwned?"
 font_size = "Helvetica 15"
+icon_path = "images\\color_wheel.ico"
+background_path = "images\\background.png"
 
 
 def button_click(entry):
@@ -18,12 +20,13 @@ def button_click(entry):
 
 root = tk.Tk()
 root.title(window_title)
-root.iconbitmap("color_wheel.ico")
+root.iconbitmap(icon_path)
+root.resizable(0, 0)
 
 canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
 canvas.pack()
 
-background_image = tk.PhotoImage(file="background.png")
+background_image = tk.PhotoImage(file=background_path)
 background_label = tk.Label(root, image=background_image)
 background_label.place(relheight=1, relwidth=1)
 
